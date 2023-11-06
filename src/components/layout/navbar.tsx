@@ -80,8 +80,8 @@ const HeaderBar = () => {
               "TEAMS",
               "CASE STUDIES",
               "CONTACT",
-            ].map((each) => (
-              <Typography variant="h5" sx={{ fontSize: H5_1 }}>
+            ].map((index, each) => (
+              <Typography variant="h5" sx={{ fontSize: H5_1 }} key={index}>
                 <Link href={"#"} underline="hover" color="inherit">
                   {each}
                 </Link>
